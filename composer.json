@@ -8,8 +8,7 @@
         "michaldudek/foundation": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "dev-master",
-        "satooshi/php-coveralls": "dev-master"
+        "phpunit/phpunit": "3.7.*"
     },
     "license": "MIT License",
     "authors": [
