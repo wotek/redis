@@ -1,0 +1,28 @@
+{
+    "name": "wotek/redis",
+    "description": "Redis data types support",
+    "keywords": ["redis", "data type", "object oriented", "hash"],
+    "require": {
+        "php": ">=5.3.3",
+        "predis/predis": "dev-master",
+        "michaldudek/foundation": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "dev-master",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Wojtek Zalewski",
+            "email": "wojtek@neverbland.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Wtk\\Redis\\Tests": "tests/",
+            "Wtk\\Redis": "src/"
+        }
+    }
+}
