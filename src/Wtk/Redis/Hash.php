@@ -13,12 +13,14 @@ namespace Wtk\Redis;
 
 use Predis\ClientInterface;
 
+use Wtk\Redis\Hash\HashInterface;
+
 /**
  * Hash data type
  *
  * @author Wojtek Zalewski <wojtek@neverbland.com>
  */
-class Hash implements DataTypeInterface, ClientAwareDataTypeInterface
+class Hash implements HashInterface, ClientAwareDataTypeInterface
 {
     /**
      * That might end up as a stupid idea. But don't want to
