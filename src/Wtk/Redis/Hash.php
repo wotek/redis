@@ -180,4 +180,14 @@ class Hash implements HashInterface, ClientAwareDataTypeInterface
 
         return $removed;
     }
+
+    /**
+     * Destroys hash and it's contents
+     *
+     * @return int
+     */
+    public function destroy()
+    {
+        return $this->getClient()->del($this->getKey()->getName());
+    }
 }
