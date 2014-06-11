@@ -116,11 +116,17 @@ class Hash implements HashInterface, ClientAwareDataTypeInterface
     {
         $client = $this->getClient();
 
-        return $client->hset(
+        $client->hset(
             $this->getKey()->getName(),
             $field,
             $value
         );
+
+        // Integer reply, specifically:
+        // 1 if field is a new field in the hash and value was set.
+        // 0 if field already exists in the hash and the value was updated.
+
+        return true;
     }
 
     /**
