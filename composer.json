@@ -3,12 +3,13 @@
     "description": "Redis data types support",
     "keywords": ["redis", "data type", "object oriented", "hash"],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.4",
         "predis/predis": "dev-master",
         "michaldudek/foundation": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit": "3.7.*",
+        "satooshi/php-coveralls": "dev-master"
     },
     "license": "MIT License",
     "authors": [
